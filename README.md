@@ -2,9 +2,9 @@
 
 ## Installation
 
-I made a script to move all config files in good path.
+This install all required binaries and packages. Then place config files in right places.
 
-```zsh
+```bash
 ./install.sh
 ```
 
