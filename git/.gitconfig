@@ -1,6 +1,6 @@
 [user]
 	name = Quentin Cormand
-	email = quentin@gotomorro.com
+	email = qcormand@gmail.com
 [core]
 	excludesfile = /Users/qcormand/.gitignore_global
 [commit]
@@ -219,3 +219,7 @@
 
 [push]
 	autoSetupRemote = true
+[init]
+	defaultBranch = main
+[url "git@github.com:"]
+	insteadOf = https://github.com/

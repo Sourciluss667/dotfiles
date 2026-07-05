@@ -19,7 +19,7 @@ min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 format = " took [$duration]($style)"
 
 [docker_context]
-format = ' (blue bold)'
+format = ' (blue bold)'
 disabled = true
 
 [directory]
@@ -30,16 +30,16 @@ format = "[$path]($style)[$lock_symbol]($lock_style) "
 format = " [$symbol$branch]($style) "
 symbol = "🍣 "
 style = "bold yellow"
-disabled = true
+# disabled = true
 
 [git_commit]
 commit_hash_length = 8
 style = "bold white"
-disabled = true
+# disabled = true
 
 [git_state]
 format = '[\($state( $progress_current of $progress_total)\)]($style) '
-disabled = true
+# disabled = true
 
 [git_status]
 conflicted = "⚔️ "
@@ -54,14 +54,14 @@ renamed = "📛 ×${count} "
 deleted = "🗑️  ×${count} "
 style = "bright-white"
 format = "$all_status$ahead_behind"
-disabled = true
+# disabled = true
 
 [hostname]
-ssh_only = false
-format = "<[$hostname]($style)>"
+ssh_only = true
+format = "<[$hostname]($style)> "
 trim_at = "-"
 style = "bold dimmed white"
-disabled = true
+disabled = false
 
 [julia]
 format = "[$symbol$version]($style) "
@@ -96,7 +96,7 @@ style_user = "bold dimmed blue"
 show_always = false
 
 [nodejs]
-format = "[ $version](bold green) "
+format = "[ $version](bold green) "
 
 [aws]
 disabled = true

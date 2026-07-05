@@ -1,0 +1,47 @@
+[[session]]
+name = "🏠 Home"
+path = "~"
+
+[[session]]
+name = "💻 My torrent tracker"
+path = "~/Developer/my-torrent-tracker"
+windows = ["nvim", "git", "run"]
+
+[[session]]
+name = "💻 APP Levstrap"
+path = "~/Developer/GoldenSoup/app"
+windows = ["nvim", "AI", "git", "run"]
+
+[[session]]
+name = "🔌 API Levstrap"
+path = "~/Developer/GoldenSoup/api"
+windows = ["nvim", "AI", "git", "run"]
+
+[[session]]
+name = "📡 Infrastructure Levstrap"
+path = "~/Developer/GoldenSoup/infrastructure"
+windows = ["nvim", "AI", "git"]
+
+[[session]]
+name = "🌐 Website Levstrap"
+path = "~/Developer/GoldenSoup/website"
+windows = ["nvim", "AI", "git", "run"]
+
+[[window]]
+name = "nvim"
+startup_script = "nvim"
+
+[[window]]
+name = "git"
+startup_script = "lazygit"
+
+[[window]]
+name = "run"
+startup_script = "make install && make start"
+
+[[window]]
+name = "AI"
+startup_script = "claude --dangerously-skip-permissions"
+
+[[window]]
+name = "shell"
