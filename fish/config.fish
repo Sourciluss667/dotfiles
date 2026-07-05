@@ -21,12 +21,15 @@ alias dps='docker ps -a --format "table {{.ID}}\t{{.Names}}\t{{.Networks}}\t{{.S
 alias t='tmux'
 alias tn='tmux new-session -A -n'
 alias ai='claude --dangerously-skip-permissions'
+alias ccd='cd /Users/qcormand/Developer/ && cd'
+alias p='pnpm'
 
 
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 set -gx ZIG_HOME "$HOME/.zig"
 set -gx PATH "$ZIG_HOME" $PATH
+set -gx PKG_CONFIG_PATH "/opt/homebrew/lib/pkgconfig:/usr/local/lib/pkgconfig" $PKG_CONFIG_PATH
 
 starship init fish | source
 

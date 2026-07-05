@@ -86,7 +86,7 @@
 	ms = merge --skip
 	#############
 	o = checkout
-	om = checkout master
+	om = checkout main
 	os = checkout staging
 	ob = checkout -b
 	opr = !sh -c 'git fo pull/$1/head:pr-$1 && git o pr-$1'
